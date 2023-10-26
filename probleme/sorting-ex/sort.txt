@@ -1,0 +1,25 @@
+
+#1 - Sort 10 schools around your house by distance:/
+because we have always 10 elements in the data structure we can inmpleMnet INSERTION SORT
+
+#2 - eBay sorts listings by the current Bid amount:
+bit amount have the type o data NUMBER so we can use Count Sort or Radix Sort its faster than Merge Sort for this type of Data
+#3 - Sport scores on ESPN
+Quick Sort its faster and its posibile to be expensive for the storage the algorithm if we use Merge Sort 
+
+#4 - Massive database (can't fit all into memory) needs to sort through past year's user data
+Merge SORT, if the data its  in a external server so its better to use the
+if we have a limeted memory storage we can use Quick Sort
+
+#5 - Almost sorted Udemy review data needs to update and add 2 new reviews
+BECOUSE THE DATA ITS ALMOST SORTED WE CAN USE INSERTION SORT
+
+#6 - Temperature Records for the past 50 years in Canada
+quick sort
+
+#7 - Large user name database needs to be sorted. Data is very random.
+Merge Sort
+
+
+#8 - You want to teach sorting for the first time
+BUBBLE SORT ,SELCTION SORT

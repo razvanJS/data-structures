@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /* Uniti doua matrici sortate distincte intr-o singura matrice cu valorile sortate
+    de asemnea
+
+
+    */
+     //input
+    const arr1=[0,3,4,31]
+    const arr2=[4,6,30]
+
+    //output
+    //[0,3,4,4,6,30,31]
+
+    //unim matricele pur si simplu dupa care le sortam
+    function mergeArrays(arr1,arr2){
+        if((arr1&&arr2)&&(typeof arr1==='object'&&typeof arr2==='object')){
+       //unirea Matricelor
+       //sortarea Matricelor
+        return [...arr1,...arr2].sort((a,b)=>a-b)
+        }
+        
+        
+     
+      
+    }
+
+     const array= mergeArrays(arr1,arr2)
+     console.log(array)
+
+
+
+
+
+
+
+</script>
+</html>

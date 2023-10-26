@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+  //[10,30,20,100,3,1] //find max nummber
+
+  function findMax(input){
+
+    //1 creete a varabile with the value of first element in the array
+    let max=input[0]
+
+    //2 create a loop over the input array
+
+    for(let i=0;i<input.length;i++){
+        //3 check if max <input value
+        //10<10 false 
+        //10<30 true max  reassignment the max value max=30
+        if(max<input[i]) max=input[i]
+
+
+    }
+    //4 return the max value
+    return max
+  }
+
+  console.log(findMax([10,30,100,20,30000000,10000]))
+
+
+  const findMax2=(input)=>input.reduce((acc,value)=>acc>value?acc:value,input[0])
+  
+  console.log(findMax2([10,30,100,20,30000000,10000]))
+
+</script>
+</html>

@@ -1,0 +1,70 @@
+
+1.If you know a solution is not far from the root of the tree:
+Daca o solutie nu este departe de Radacina Arborelui
+
+       10
+    7      20
+
+BFS
+BFS este cea mai buna varianta de folosit daca un node este aproape de radacina,in acest caz spatiul ocupat de 
+algoritm nu o sa fie unul mare solutia fiind apropiata de ROOT iar ca timp o sa fie un algoritm mai rapid din punct 
+de vedere al complexitati timpului decat DFS
+
+//If the tree is very deep and solutions are rare: 
+2 Daca arborele are o adancime mare si sloutia este rara
+
+       10
+    7      20
+  5  9   30   50 
+
+
+BFS 
+
+Daca arborele are o adancime mare o performanta mai mare ar avea algoritmul BFS 
+pentru ca acesta cauta in adancime, daca arborele are o adancime mare este 
+mai bine sa folosim acest algoritm BFS ar cauta fiecare nod copil al unui node parite si ar 
+dura mai mult din punct de vedere al complexitati timpului.Atsfel este un algoritm mult mai efcient
+ca spatiu BFS o(d) la o structura cu o adancime mare este posibil sa avem nevnoie de spatiu de procesare mai mare
+
+
+3.Dacă arborele este foarte lat:
+
+
+                1
+       4      10     3    5 
+     1  7   -3  16  15 4  0 35
+
+DFS
+
+Din punct de vedere al complexitati timpului O(n),este mult mai rapid decat BFS 
+pentru ca DFS traverseaza toate nodurile unui Parinte pe Rand (in Latime) 
+BFS ar ocupa mai mult spatiu tinand evidenta a mai multor noduri,travesand fiecare nod in adancimea lui si
+traversand din nou Nodul parinte ar ocupa mult spatiu in acest caz
+
+4.Dacă soluțiile sunt frecvente, dar situate adânc în arbore:
+
+                      10
+                 7           20
+               5    9     30    50 
+             3  6  85 8  4 33 88 55
+
+
+DFS 
+Avand in vedere ca trebuie ca avem mai multe solutii e mult mai efcient DFS ,BFS cauta in adancimea Arborelui
+in acest caz ar lua mai mult timp algoritmului BFS sa cauta un Node de date 
+Iar ca spatiu de procesare DFS ocupa mai putin spatiu in procesarea si excutarea datelor
+
+5 Determinând dacă există o cale între două noduri:
+
+DFS
+DFS este o varianta mai efcienta traversand fiecare node copil in parte de la stanga la dreapta avem calea exacta intre
+noduri BFS cauta in adancime si este mult mai ieficient ca timp sa determinam calea intre noduri
+
+6 Gasirea cai celei mai usoare
+BFS
+Ca timp este mai efcient sa folosim BFS pentru a gasi elementul printro cale mai scurta insa daca Arobore desi este eficient ca timp
+poate fi ineficinet in stocarea memoriei ,este posibil sa fie nevoie de mult spatiu daca arborele de date este foarte mare
+
+
+
+
